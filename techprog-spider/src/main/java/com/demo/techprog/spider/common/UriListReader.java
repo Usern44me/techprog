@@ -1,6 +1,6 @@
-package com.demo.techprog.spider.impl;
+package com.demo.techprog.spider.common;
 
-import com.demo.techprog.spider.intface.Reader;
+import com.demo.techprog.spider.Reader;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;

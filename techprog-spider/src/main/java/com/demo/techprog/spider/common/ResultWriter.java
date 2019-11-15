@@ -1,7 +1,7 @@
-package com.demo.techprog.spider.impl;
+package com.demo.techprog.spider.common;
 
 import com.demo.techprog.model.PageAnalysis;
-import com.demo.techprog.spider.intface.Writer;
+import com.demo.techprog.spider.Writer;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 @RequiredArgsConstructor
-public class RersultWriter implements Writer<PageAnalysis> {
+public class ResultWriter implements Writer<PageAnalysis> {
 
     private final String fileUri;
     private Path filePath;

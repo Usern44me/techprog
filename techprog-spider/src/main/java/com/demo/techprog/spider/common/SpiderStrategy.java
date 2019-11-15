@@ -1,14 +1,14 @@
-package com.demo.techprog.spider.impl;
+package com.demo.techprog.spider.common;
 
 import com.demo.techprog.model.Page;
 import com.demo.techprog.model.PageAnalysis;
-import com.demo.techprog.spider.intface.*;
-import lombok.RequiredArgsConstructor;
+import com.demo.techprog.spider.*;
+import lombok.Builder;
 
 import java.io.IOException;
 import java.util.List;
 
-@RequiredArgsConstructor
+@Builder
 public class SpiderStrategy implements Strategy {
 
     private final Reader<List<String>> reader;

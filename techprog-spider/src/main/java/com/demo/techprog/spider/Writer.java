@@ -1,4 +1,4 @@
-package com.demo.techprog.spider.intface;
+package com.demo.techprog.spider;
 
 import java.io.IOException;
 

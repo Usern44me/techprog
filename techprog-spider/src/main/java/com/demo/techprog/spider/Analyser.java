@@ -1,4 +1,4 @@
-package com.demo.techprog.spider.intface;
+package com.demo.techprog.spider;
 
 public interface Analyser<S, R> {
 

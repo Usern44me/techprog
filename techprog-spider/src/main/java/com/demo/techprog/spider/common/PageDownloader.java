@@ -1,7 +1,7 @@
-package com.demo.techprog.spider.impl;
+package com.demo.techprog.spider.common;
 
 import com.demo.techprog.model.Page;
-import com.demo.techprog.spider.intface.Downloader;
+import com.demo.techprog.spider.Downloader;
 
 public class PageDownloader implements Downloader<Page> {
 

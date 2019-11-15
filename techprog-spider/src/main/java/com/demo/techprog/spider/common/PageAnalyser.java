@@ -1,8 +1,8 @@
-package com.demo.techprog.spider.impl;
+package com.demo.techprog.spider.common;
 
 import com.demo.techprog.model.Page;
 import com.demo.techprog.model.PageAnalysis;
-import com.demo.techprog.spider.intface.Analyser;
+import com.demo.techprog.spider.Analyser;
 
 import java.util.Arrays;
 import java.util.HashMap;
