@@ -16,13 +16,14 @@ public class SpiderStrategy implements Strategy {
     private final Analyser<Page, PageAnalysis> analyser;
     private final Writer<PageAnalysis> writer;
 
-    public void execute() {
+    public void execute() throws IOException{
         try {
             List<String> read = reader.read();
-            read.stream()
-                    .map(downloader::download)
-                    .map(analyser::analyse)
-                    .forEach(this::write);
+            for (String s : read) {
+                Page download = downloader.download(s);
+                PageAnalysis analyse = analyser.analyse(download);
+                write(analyse);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
