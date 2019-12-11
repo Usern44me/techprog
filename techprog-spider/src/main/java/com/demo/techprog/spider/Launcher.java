@@ -17,15 +17,9 @@ public class Launcher {
     }
 
     private static void init(String[] args) {
-        if (args.length % 2 != 0) throw new IllegalArgumentException("Arguments invalid");
-        for (int i = 0; i < args.length; i++) {
-            if (args[i].equals(Config.READ_FROM_FLAG)) {
-                readUri = args[++i];
-            }
-            if (args[i].equals(Config.WRITE_TO_FLAG)) {
-                writeUri = args[++i];
-            }
-        }
+        writeUri = "ResList.txt";
+        readUri = "UrlList.txt";
+
         strategy = SpiderStrategy.builder()
                 .reader(new UriListReader(readUri))
                 .downloader(new PageDownloader())
